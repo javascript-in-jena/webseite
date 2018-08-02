@@ -12,4 +12,4 @@ Unsere Veranstaltungen laufen in der Regel so ab, das es am Anfang eine kleine V
 
 Die nächste Veranstaltung findet am 2018-06-16 um 17:00 Uhr in der EAH Jena in Raum 05.00.04 statt.
 
-Der Link der Veranstaltung ist [https://jena.js.org/treffen-am-2018-08-16](https://jena.js.org/treffen-am-2018-08-16)
+Der Link der Veranstaltung ist [https://jena.js.org/treffen/2018-08-16](https://jena.js.org/treffen/2018-08-16)
