@@ -1,27 +1,15 @@
 {
   "comments": {
-    "js": "comments.ecdd5e33.js"
-  },
-  "sidebar": {
-    "js": "sidebar.88cb8643.js"
-  },
-  "twemoji": {
-    "js": "twemoji.c34d1cdf.js"
-  },
-  "details-polyfill": {
-    "js": "details-polyfill.aab26f9f.js"
-  },
-  "lunr_search": {
-    "js": "lunr_search.15b5835f.js"
-  },
-  "fuse_search": {
-    "js": "fuse_search.cc21252e.js"
-  },
-  "algolia_search": {
-    "js": "algolia_search.499151b4.js"
+    "js": "comments.27514fa0.js"
   },
   "main": {
-    "css": "main.12a6407f.css",
-    "js": "main.eafde9b9.js"
+    "css": "main.7c279fb0.css",
+    "js": "main.834903c5.js"
+  },
+  "sidebar": {
+    "js": "sidebar.783900fd.js"
+  },
+  "vendors~twemoji": {
+    "js": "vendors~twemoji.1c8f52b0.js"
   }
 }
