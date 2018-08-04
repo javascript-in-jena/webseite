@@ -1,8 +1,7 @@
 ---
-title: Home
+title: Start
 menu:
   - main
-  - sidebar
 weight: -270
 ---
 
