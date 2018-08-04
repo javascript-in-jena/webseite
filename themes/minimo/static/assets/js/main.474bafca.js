@@ -1,4 +1,90 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["vendors~twemoji"],{
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
 
 /***/ "./node_modules/twemoji/2/twemoji.npm.js":
 /*!***********************************************!*\
@@ -20,6 +106,63 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {var location = global.locati
 
 eval("var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\treturn this;\r\n})();\r\n\r\ntry {\r\n\t// This works if eval is allowed (see CSP)\r\n\tg = g || Function(\"return this\")() || (1, eval)(\"this\");\r\n} catch (e) {\r\n\t// This works if the window reference is available\r\n\tif (typeof window === \"object\") g = window;\r\n}\r\n\r\n// g can still be undefined, but nothing to do about it...\r\n// We return undefined, instead of nothing here, so it's\r\n// easier to handle this case. if(!global) { ...}\r\n\r\nmodule.exports = g;\r\n\n\n//# sourceURL=webpack:///(webpack)/buildin/global.js?");
 
+/***/ }),
+
+/***/ "./src/scripts/comments.ts":
+/*!*********************************!*\
+  !*** ./src/scripts/comments.ts ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst commentList = document.querySelector('.comment-list');\r\nconst respondBlock = document.querySelector('#respond');\r\nconst commentForm = respondBlock.querySelector('form');\r\nconst cancelReplyLink = respondBlock.querySelector('#cancel-comment-reply-link');\r\nconst parentIdInput = respondBlock.querySelector('[name=\"fields[parent_id]\"]');\r\nconst moveRespondBlock = commentId => {\r\n    if (!commentId)\r\n        return;\r\n    const comment = commentList.querySelector(`#comment-${commentId} article`);\r\n    parentIdInput.value = commentId;\r\n    comment.parentNode.insertBefore(respondBlock, comment.nextSibling);\r\n    cancelReplyLink.style.display = '';\r\n    commentForm.querySelector('textarea').focus();\r\n    return false;\r\n};\r\nexports.initComments = () => {\r\n    cancelReplyLink.style.display = 'none';\r\n    cancelReplyLink.addEventListener('click', e => {\r\n        e.preventDefault();\r\n        parentIdInput.value = '';\r\n        commentList.parentNode.appendChild(respondBlock);\r\n        cancelReplyLink.style.display = 'none';\r\n    });\r\n    const win = window;\r\n    win.moveRespondBlock = moveRespondBlock;\r\n};\r\n\n\n//# sourceURL=webpack:///./src/scripts/comments.ts?");
+
+/***/ }),
+
+/***/ "./src/scripts/main.ts":
+/*!*****************************!*\
+  !*** ./src/scripts/main.ts ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];\r\n    result[\"default\"] = mod;\r\n    return result;\r\n};\r\nfunction onReady() {\r\n    const body = document.body;\r\n    let hasEmoji = body.classList.contains('has-emoji');\r\n    if (hasEmoji) {\r\n        let entry = body.querySelector('.entry');\r\n        Promise.resolve().then(() => __importStar(__webpack_require__(/* webpackChunkName: \"twemoji\" */ /*! twemoji */ \"./node_modules/twemoji/2/twemoji.npm.js\"))).then(twemoji => twemoji.parse(entry));\r\n    }\r\n    let hasSidebar = body.classList.contains('has-sidebar');\r\n    if (hasSidebar) {\r\n        Promise.resolve().then(() => __importStar(__webpack_require__(/* webpackChunkName: \"sidebar\" */ /*! ./sidebar */ \"./src/scripts/sidebar.ts\"))).then(({ initSidebar }) => initSidebar());\r\n    }\r\n    let hasComments = body.querySelector('#comment-form');\r\n    if (hasComments) {\r\n        Promise.resolve().then(() => __importStar(__webpack_require__(/* webpackChunkName: \"comments\" */ /*! ./comments */ \"./src/scripts/comments.ts\"))).then(({ initComments }) => initComments());\r\n    }\r\n}\r\ndocument.addEventListener('DOMContentLoaded', onReady);\r\n\n\n//# sourceURL=webpack:///./src/scripts/main.ts?");
+
+/***/ }),
+
+/***/ "./src/scripts/sidebar.ts":
+/*!********************************!*\
+  !*** ./src/scripts/sidebar.ts ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst body = document.body;\r\nconst sidebar = body.querySelector('#sidebar');\r\nconst expandButton = body.querySelector('#sidebar-toggler');\r\nconst overlay = body.querySelector('.sidebar-overlay');\r\nconst sidebarMenu = body.querySelector('#sidebar-menu');\r\nconst collapseButton = expandButton.cloneNode(true);\r\ncollapseButton.setAttribute('id', '#sidebar-collapse');\r\nconst setAriaExpanded = (items, value) => {\r\n    items.forEach(item => item.setAttribute('aria-expanded', value));\r\n};\r\nconst hideSidebar = () => {\r\n    sidebar.classList.remove('toggled');\r\n    setAriaExpanded([sidebar, expandButton, collapseButton], false);\r\n};\r\nconst showSidebar = () => {\r\n    sidebar.classList.add('toggled');\r\n    setAriaExpanded([sidebar, expandButton, collapseButton], true);\r\n    sidebar.focus();\r\n};\r\nlet windowWidth, windowHeight, bodyHeight, sidebarHeight, windowPos, lastWindowPos = 0, top = false, bottom = false, topOffset = 0, sidebarOffsetTop, resizeTimer;\r\nconst resizeHandler = () => {\r\n    windowWidth = window.innerWidth;\r\n    windowHeight = window.innerHeight;\r\n};\r\nconst scrollHandler = () => {\r\n    windowPos = window.scrollY;\r\n    bodyHeight = body.offsetHeight;\r\n    sidebarHeight = sidebar.offsetHeight;\r\n    sidebarOffsetTop = Math.round(windowPos + sidebar.getBoundingClientRect().top);\r\n    if (sidebarHeight > windowHeight) {\r\n        if (windowPos > lastWindowPos) {\r\n            if (top) {\r\n                top = false;\r\n                topOffset = sidebarOffsetTop > 0 ? sidebarOffsetTop : 0;\r\n                sidebar.setAttribute('style', `top: ${topOffset}px;`);\r\n            }\r\n            else if (!bottom &&\r\n                windowPos + windowHeight > sidebarHeight + sidebarOffsetTop &&\r\n                sidebarHeight < bodyHeight) {\r\n                bottom = true;\r\n                sidebar.setAttribute('style', 'position: fixed; bottom: 0;');\r\n            }\r\n        }\r\n        else if (windowPos < lastWindowPos) {\r\n            if (bottom) {\r\n                bottom = false;\r\n                topOffset = sidebarOffsetTop > 0 ? sidebarOffsetTop : 0;\r\n                sidebar.setAttribute('style', `top: ${topOffset}px;`);\r\n            }\r\n            else if (!top && windowPos < sidebarOffsetTop) {\r\n                top = true;\r\n                sidebar.setAttribute('style', 'position: fixed;');\r\n            }\r\n        }\r\n        else {\r\n            top = bottom = false;\r\n            topOffset = sidebarOffsetTop ? sidebarOffsetTop : 0;\r\n            sidebar.setAttribute('style', `top: ${topOffset}px;`);\r\n        }\r\n    }\r\n    else if (!top) {\r\n        top = true;\r\n        sidebar.setAttribute('style', 'position: fixed;');\r\n    }\r\n    lastWindowPos = windowPos;\r\n};\r\nconst resizeAndScrollHandler = () => {\r\n    resizeHandler();\r\n    scrollHandler();\r\n};\r\nconst initSidebarMenu = () => {\r\n    let itemsWithSubmenu = sidebarMenu.querySelectorAll('.item.has-children');\r\n    for (const item of itemsWithSubmenu) {\r\n        let toggler = item.querySelector('button');\r\n        let submenu = item.querySelector('.sub-menu');\r\n        setAriaExpanded([submenu, toggler], false);\r\n        toggler.addEventListener('click', () => {\r\n            let toggled = item.classList.contains('toggled');\r\n            item.classList[toggled ? 'remove' : 'add']('toggled');\r\n            setAriaExpanded([submenu, toggler], !toggled);\r\n        });\r\n    }\r\n    ;\r\n};\r\nexports.initSidebar = () => {\r\n    sidebar.setAttribute('tabindex', '-1');\r\n    sidebar.insertBefore(collapseButton, sidebar.children[1]);\r\n    setAriaExpanded([sidebar, expandButton, collapseButton], false);\r\n    expandButton.addEventListener('click', showSidebar);\r\n    collapseButton.addEventListener('click', hideSidebar);\r\n    overlay.addEventListener('click', hideSidebar);\r\n    window.addEventListener('scroll', scrollHandler);\r\n    window.addEventListener('resize', () => {\r\n        clearTimeout(resizeTimer);\r\n        resizeTimer = setTimeout(resizeAndScrollHandler, 500);\r\n    });\r\n    resizeAndScrollHandler();\r\n    if (sidebarMenu)\r\n        initSidebarMenu();\r\n};\r\n\n\n//# sourceURL=webpack:///./src/scripts/sidebar.ts?");
+
+/***/ }),
+
+/***/ "./src/stylesheets/style.scss":
+/*!************************************!*\
+  !*** ./src/stylesheets/style.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/stylesheets/style.scss?");
+
+/***/ }),
+
+/***/ 0:
+/*!****************************************************************!*\
+  !*** multi ./src/scripts/main.ts ./src/stylesheets/style.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! C:\\Users\\tim\\Datenknoten\\dev\\JavaScript in Jena\\website\\themes\\minimo\\src\\scripts\\main.ts */\"./src/scripts/main.ts\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\tim\\Datenknoten\\dev\\JavaScript in Jena\\website\\themes\\minimo\\src\\stylesheets\\style.scss */\"./src/stylesheets/style.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/scripts/main.ts_./src/stylesheets/style.scss?");
+
 /***/ })
 
-}]);
+/******/ });

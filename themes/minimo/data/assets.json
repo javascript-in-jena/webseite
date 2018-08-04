@@ -1,15 +1,6 @@
 {
-  "comments": {
-    "js": "comments.27514fa0.js"
-  },
   "main": {
-    "css": "main.7c279fb0.css",
-    "js": "main.834903c5.js"
-  },
-  "sidebar": {
-    "js": "sidebar.783900fd.js"
-  },
-  "vendors~twemoji": {
-    "js": "vendors~twemoji.1c8f52b0.js"
+    "css": "main.ac8ca626.css",
+    "js": "main.474bafca.js"
   }
 }

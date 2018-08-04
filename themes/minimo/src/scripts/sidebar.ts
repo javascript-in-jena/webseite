@@ -1,11 +1,11 @@
 const body = document.body
 
-const sidebar = body.querySelector('#sidebar')
-const expandButton = body.querySelector('#sidebar-toggler')
+const sidebar = body.querySelector<HTMLDivElement>('#sidebar')
+const expandButton = body.querySelector<HTMLButtonElement>('#sidebar-toggler')
 const overlay = body.querySelector('.sidebar-overlay')
 const sidebarMenu = body.querySelector('#sidebar-menu')
 
-const collapseButton = expandButton.cloneNode(true)
+const collapseButton = expandButton.cloneNode(true) as HTMLButtonElement
 collapseButton.setAttribute('id', '#sidebar-collapse')
 
 const setAriaExpanded = (items, value) => {
@@ -88,9 +88,9 @@ const resizeAndScrollHandler = () => {
 }
 
 const initSidebarMenu = () => {
-  let itemsWithSubmenu = sidebarMenu.querySelectorAll('.item.has-children')
+  let itemsWithSubmenu = sidebarMenu.querySelectorAll<HTMLDivElement>('.item.has-children')
 
-  itemsWithSubmenu.forEach(item => {
+  for(const item of itemsWithSubmenu) {
     let toggler = item.querySelector('button')
     let submenu = item.querySelector('.sub-menu')
 
@@ -102,8 +102,8 @@ const initSidebarMenu = () => {
       item.classList[toggled ? 'remove' : 'add']('toggled')
       setAriaExpanded([submenu, toggler], !toggled)
     })
-  })
-}
+  };
+};
 
 export const initSidebar = () => {
   sidebar.setAttribute('tabindex', '-1')

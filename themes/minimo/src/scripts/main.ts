@@ -1,7 +1,3 @@
-import './webpack-public-path'
-
-import '../stylesheets/style'
-
 function onReady() {
   const body = document.body
 

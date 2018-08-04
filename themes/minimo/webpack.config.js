@@ -32,9 +32,10 @@ const node_env = process.env.NODE_ENV
 
 const config = {
   mode: node_env === 'production' ? 'production' : 'development',
-  entry: {
-    main: path.join(__dirname, 'src/scripts', 'main.js')
-  },
+  entry: [
+    path.join(__dirname, 'src/scripts', 'main.ts'),
+    path.join(__dirname, 'src/stylesheets', 'style.scss')
+  ],
   output: {
     filename: '[name].[chunkhash:8].js',
     chunkFilename: '[name].[chunkhash:8].js',
@@ -42,53 +43,36 @@ const config = {
   },
   module: {
     rules: [
+      { test: /\.tsx?$/, loader: "ts-loader" },
       {
-        test: /\.js$/,
-        include: path.join(__dirname, 'src/scripts'),
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env'],
-            plugins: ['syntax-dynamic-import']
-          }
-        }
-      },
-      {
-        test: /\.scss$/,
-        include: path.resolve(__dirname, 'src/stylesheets'),
+        test: /.scss$/,
         use: [
           MiniCSSExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              minimize:
-                'production' === node_env
-                  ? {
-                      discardComments: {
-                        removeAllButFirst: true
-                      }
-                    }
-                  : false
-            }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: [autoprefixer()]
-            }
-          },
-          'sass-loader'
+          // {
+          //   loader: 'file-loader',
+          //   options: {
+          //     name: '[name].css',
+          //     // outputPath: 'assets/css/'
+          //   }
+          // },
+          // {
+          //   loader: 'extract-loader',
+          //   options: {
+          //     publicPath: '',
+          //   },
+          // },
+          { loader: 'css-loader' },
+          { loader: 'postcss-loader' },
+          { loader: 'sass-loader' }
         ]
       }
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.scss']
+    // Add `.ts` and `.tsx` as a resolvable extension.
+    extensions: [".ts", ".tsx", ".js"]
   },
-  plugins: [extractCSS, assetsManifest]
+  plugins: [cleanBuild, extractCSS, assetsManifest]
 }
-
-if (node_env === 'production') config.plugins.push(cleanBuild)
 
 module.exports = config
