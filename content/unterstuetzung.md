@@ -1,7 +1,7 @@
 ---
 title: Unterstütztung
 menu:
-  - main
+  - sidebar
 weight: -250
 date: 2018-08-04T16:42:00+01:00
 lastmod: 2018-08-04T16:42:00+01:00

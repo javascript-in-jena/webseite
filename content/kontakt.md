@@ -1,7 +1,7 @@
 ---
 title: Kontakt
 menu:
-  - main
+  - sidebar
 weight: -260
 date: 2018-08-04T16:36:00+01:00
 lastmod: 2018-08-04T16:41:00+01:00

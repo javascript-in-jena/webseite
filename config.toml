@@ -53,7 +53,7 @@ enable = true
 
 [params.widgets]
 # homepage = ["recent_posts"]
-sidebar = ["about", "social_menu"]
+sidebar = ["about","sidebar_menu", "social_menu"]
 # footer = ["social_menu"]
 
 [params.opengraph.facebook]
