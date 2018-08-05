@@ -1,4 +1,0 @@
-[submodule "public"]
-	path = public
-	url = https://github.com/javascript-in-jena/javascript-in-jena.github.io.git
-	branch = master
