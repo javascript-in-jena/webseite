@@ -70,7 +70,7 @@ titleSeparator = "•"
 
 [params.social]
 #codepen = "MunifTanjim"
-# email = "contact@example.com"
+email = "kontakt@javascript-in-jena.de"
 # facebook = "MunifTanjim"
 github = "javascript-in-jena"
 gitlab = "javascript-in-jena"
