@@ -11,5 +11,5 @@ Du kannst uns auf verschiedene Weise unterstützen:
 
 * An den Veranstaltungen teilnehmen :wink:
 * Die Veranstalltungen deinen Freunden und Bekannten weiterempfehlen.
-* Dich ins das Projekt mit einbringen. Was hier aktuell zu tun ist, erfrage am besten im [Chat](/kontakt).
+* Dich ins das Projekt mit einbringen. Was hier aktuell zu tun ist, erfrage am besten im [Chat](/kontakt) oder schau auf das [Aufgabenboard](https://github.com/orgs/javascript-in-jena/projects/1).
 * Dich an [den Ausgaben](https://opencollective.com/javascript-in-jena) beteiligen.
