@@ -1,6 +1,7 @@
 image: monachus/hugo
 
-pages:
+
+build:
   script:
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - eval $(ssh-agent -s)
@@ -13,5 +14,5 @@ pages:
     - hugo
     - cd public
     - git add *
-    - git commit -m "Build $CI_COMMIT_SHA\nAuthor: $GITLAB_USER_NAME\nÄnderungen:\n\n$CI_COMMIT_MESSAGE"
+    - git commit  -m "Build $CI_COMMIT_SHA\nAuthor $GITLAB_USER_NAME\nAenderungen\n\n$CI_COMMIT_MESSAGE"
     - git push
