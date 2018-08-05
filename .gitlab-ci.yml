@@ -15,5 +15,5 @@ build:
     - hugo
     - cd public
     - git add *
-    - git commit  -m "Build $CI_COMMIT_SHA\nAuthor $GITLAB_USER_NAME\nAenderungen\n\n$CI_COMMIT_MESSAGE"
+    - git commit  -m "$(echo -e "Build $CI_COMMIT_SHA\nAuthor $GITLAB_USER_NAME\nAenderungen\n\n$CI_COMMIT_MESSAGE")"
     - git push
