@@ -13,4 +13,4 @@ https://riot.im/app/#/room/#JSinJena:matrix.org
 
 Wenn es umbedingt eine E-Mail sein soll, bitte folgende verwenden:
 
-jsinjena@datenknoten.me
+kontakt@javascript-in-jena.de
