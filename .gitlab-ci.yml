@@ -1,0 +1,17 @@
+image: monachus/hugo
+
+pages:
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - git config --global user.email "tim@datenknoten.me"
+    - git config --global user.name "Gitlab Build System"
+    - git clone git@github.com:javascript-in-jena/javascript-in-jena.github.io.git public
+    - hugo
+    - cd public
+    - git add *
+    - git commit -m "Build $CI_COMMIT_SHA\nAuthor: $GITLAB_USER_NAME\nÄnderungen:\n\n$CI_COMMIT_MESSAGE"
+    - git push
