@@ -11,8 +11,6 @@ Am besten erreichst du uns über unseren Chat auf [matrix.org](https://matrix.or
 
 https://riot.im/app/#/room/#JSinJena:matrix.org
 
-Am besten uns über matrix anschreiben.
-
 Wenn es umbedingt eine E-Mail sein soll, bitte folgende verwenden:
 
 jsinjena@datenknoten.me
