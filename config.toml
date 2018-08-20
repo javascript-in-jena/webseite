@@ -126,11 +126,11 @@ page = "/:slug/"
 # identifier = "naechstes-treffen"
 # url = "/treffen/2018-08-16/"
 
-# [[menu.sidebar]]
-# name = "Nächstes Treffen"
-# weight = -10
-# identifier = "treffen/2018-08-16/"
-# url = "/treffen/2018-08-16/"
+[[menu.sidebar]]
+name = "Chat"
+weight = -275
+identifier = "chat"
+url = "https://riot.im/app/#/room/#JSinJena:matrix.org"
 
 [blackfriday]
 hrefTargetBlank = false
