@@ -1,0 +1,31 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "outDir": "dist",
+        "declaration": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es2017",
+        "module": "commonjs",
+        "jsx": "react",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "plugins": [
+            {
+                "name": "tslint-language-service"
+            }
+        ],
+        "lib": [
+            "es2017",
+            "dom"
+        ]
+    },
+    "include": [
+        "template"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

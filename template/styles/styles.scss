@@ -1,0 +1,231 @@
+@import url('fonts.css');
+
+$colors: (
+  highlight: rgb(247, 223, 30),
+  text: black,
+);
+
+@function color($color-name) {
+    @return var(--color-#{$color-name});
+  }
+
+:root {
+    --default-margin: 1rem;
+    --default-border-width: 0.2rem;
+
+    @each $name, $color in $colors {
+        --color-#{$name}: #{$color};
+      }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 18px;
+    margin: var(--default-margin);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2:first-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+hr {
+    color: color(highlight);
+    background-color: color(highlight);
+    border: 0;
+    height: 0.2rem;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+a {
+    color: color(text);
+    text-decoration-color: color(highlight);
+    text-decoration-skip: ink;
+}
+
+.social {
+    list-style: none;
+    padding-left: calc(var(--default-margin) / 2);
+    padding-right: calc(var(--default-margin) / 2);
+
+    a {
+        padding-left: 30px;
+        background-size: 24px;
+        background-repeat: no-repeat;
+    }
+
+    a[href^="https://github.com"] {
+        background-image: url(/assets/github.svg);
+    }
+
+    a[href^="https://twitter.com"] {
+        background-image: url(/assets/twitter.svg);
+    }
+
+    a[href^="https://riot.im"] {
+        background-position-y: center;
+        background-image: url(/assets/matrix-logo.svg);
+    }
+
+    a[href^="mailto:"] {
+        background-image: url(/assets/envelope-regular.svg);
+    }
+}
+
+.main.container {
+    display: block;
+    position: relative;
+
+    .navigation {
+        width: 15rem;
+        flex: 0 0 auto;
+        margin-right: calc(var(--default-margin) / 2);
+
+        h1 {
+            text-align: center;
+
+            .logo {
+                max-width: 100%;
+                display: block;
+            }
+        }
+
+        p {
+            padding-left: calc(var(--default-margin) / 2);
+            padding-right: calc(var(--default-margin) / 2);
+        }
+
+        nav {
+            padding-left: calc(var(--default-margin) / 2);
+            padding-right: calc(var(--default-margin) / 2);
+            list-style: none;
+        }
+    }
+
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+
+        .hamburger {
+            width: 32px;
+            flex: 0 0 auto;
+            color: color(highlight);
+        }
+
+        .logo {
+            width: 32px;
+            flex: 0 0 auto;
+        }
+
+        h1 {
+            flex: 1 1 auto;
+            text-align: center;
+        }
+
+        hr {
+            flex: 1 1 auto;
+            width: 100%;
+        }
+    }
+
+    .backdrop {
+        display: none;
+    }
+}
+
+#main-navigation:target {
+    left: 0;
+}
+
+#main-navigation:target ~ .backdrop {
+    position: fixed;
+    display: block;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 998;
+    background-color: rgba(255,255,255, .85);
+    cursor: default;
+}
+
+#main-navigation {
+    display: block;
+    margin-right: 0;
+    position: fixed;
+    background-color: white;
+    left: -15rem;
+    top: 0;
+    z-index: 1000;
+    height: 100vh;
+    position: fixed;
+    transition: all 1s ease;
+
+    p {
+        display: none;
+    }
+}
+
+@media all and (min-width: 840px) {
+    .main.container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+
+        .content {
+            padding-left: calc(var(--default-margin) / 2);
+            flex: 1 1 auto;
+            margin-left: 0;
+            article {
+                width: 40vw;
+            }
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        #main-navigation {
+            padding-right: calc(var(--default-margin) / 2);
+            position: static;
+            display: block;
+            left: auto;
+            flex: 0 0 auto;
+            transition: none;
+            p {
+                display: block;
+            }
+        }
+    }
+
+
+
+    h1, h2:first-of-type {
+        margin-top: inherit;
+    }
+}

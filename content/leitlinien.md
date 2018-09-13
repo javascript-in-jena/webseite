@@ -1,8 +1,8 @@
 ---
 title: Leitlinien
 menu:
-  - sidebar
-weight: -280
+  - main
+weight: -200
 date: 2018-08-05T16:42:00+01:00
 ---
 

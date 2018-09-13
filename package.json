@@ -1,0 +1,23 @@
+{
+  "name": "website-ts-ssg",
+  "version": "1.0.0",
+  "description": "Webseite für https://jena.js.org",
+  "main": "index.js",
+  "scripts": {
+    "build": "node -r ts-node/register node_modules/@datenknoten/ts-ssg/files/run --config settings.json",
+    "build:sass": "node-sass.cmd template/styles/styles.scss content/assets/styles.css",
+    "watch": "chokidar.cmd --verbose \"**/*\" --command \"npm run build:sass && npm run build\" --ignore \"public/**/*\" --ignore \"content/assets/styles.css\""
+  },
+  "author": "JavaScript in Jena",
+  "license": "MIT",
+  "dependencies": {
+    "@datenknoten/ts-ssg": "^0.5.0",
+    "ts-node": "7.0.1",
+    "typescript": "3.0.3",
+    "tslint-language-service": "0.9.9",
+    "@datenknoten/tslint-config": "0.2.0",
+    "chokidar-cli": "1.2.1",
+    "moment": "2.22.2",
+    "node-sass": "4.9.3"
+  }
+}

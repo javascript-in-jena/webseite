@@ -1,0 +1,10 @@
+{
+    "extends": [
+        "@datenknoten/tslint-config"
+    ],
+    "rules": {
+        "file-header": [true, "@license MIT", "@license MIT"],
+        "no-submodule-imports": [true, "react-dom", "@oclif"],
+        "newline-per-chained-call": [false]
+    }
+}
