@@ -10,6 +10,13 @@
   },
   "author": "JavaScript in Jena",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javascript-in-jena/webseite"
+  },
+  "bugs": {
+    "url": "https://github.com/javascript-in-jena/meta/issues"
+  },
   "dependencies": {
     "@datenknoten/ts-ssg": "^0.5.0",
     "ts-node": "7.0.1",
