@@ -4,6 +4,9 @@ image: node:10
 build:
   only:
     - develop
+  artifacts:
+    paths:
+      - public
   script:
     - eval $(ssh-agent -s)
     - echo "$DEPLOY_KEY" | tr --delete '\r' | ssh-add - > /dev/null
