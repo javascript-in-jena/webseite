@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node -r ts-node/register node_modules/@datenknoten/ts-ssg/files/run --config settings.json",
-    "build:sass": "node-sass.cmd template/styles/styles.scss content/assets/styles.css",
-    "watch": "chokidar.cmd --verbose \"**/*\" --command \"npm run build:sass && npm run build\" --ignore \"public/**/*\" --ignore \"content/assets/styles.css\""
+    "build:sass": "node-sass template/styles/styles.scss content/assets/styles.css",
+    "watch": "chokidar --verbose \"**/*\" --command \"npm run build:sass && npm run build\" --ignore \"public/**/*\" --ignore \"content/assets/styles.css\""
   },
   "author": "JavaScript in Jena",
   "license": "MIT",
