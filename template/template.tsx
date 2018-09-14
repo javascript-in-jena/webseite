@@ -15,9 +15,13 @@ import { Navigation } from './navigation';
 export function render(post: PostEntity, context: AssetEntity[]) {
     return <html lang="de">
         <head>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
             <title>{post.metadata.title} | JavaScript in Jena</title>
             <link rel="stylesheet" href="/assets/styles.css"></link>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <script
+                src="/assets/turbolinks.js"
+                defer></script>
         </head>
         <body>
             <div className="main container">
