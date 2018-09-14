@@ -43,7 +43,7 @@ export function render(post: PostEntity, context: AssetEntity[]) {
                     </ul>
                 </section>
                 <section className="mobile-menu">
-                    <a href="#main-navigation" className="hamburger">
+                    <a href="#main-navigation" className="hamburger" data-turbolinks="false">
                     <svg aria-hidden="true" data-prefix="fas" data-icon="bars" className="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
                     </a>
                     <h1><a href="/">JavaScript in Jena</a></h1>
@@ -53,7 +53,7 @@ export function render(post: PostEntity, context: AssetEntity[]) {
                 <section className="content">
                     <Post post={post}></Post>
                 </section>
-            <a href="#main-navigation-toggle" className="backdrop"></a>
+            <a href="#main-navigation-toggle" className="backdrop" data-turbolinks="false"></a>
             </div>
         </body>
     </html>;
