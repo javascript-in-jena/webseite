@@ -16,7 +16,7 @@ build:
     - git config --global user.email "kontakt@javascript-in-jena.de"
     - git config --global user.name "Gitlab Build System"
     - git clone git@github.com:javascript-in-jena/javascript-in-jena.github.io.git public
-    - npm install
+    - npm ci
     - cd public
     - rm --recursive *
     - npm run build:sass
