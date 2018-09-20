@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 1120 630"
+   id="svg4227"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="C:\Users\tim\Datenknoten\dev\JavaScript in Jena\CI\quadratisch\variante3.png"
+   inkscape:export-xdpi="182"
+   inkscape:export-ydpi="182"
+   width="1120"
+   height="630">
+  <metadata
+     id="metadata4237">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4235" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview4233"
+     showgrid="false"
+     inkscape:zoom="0.9203612"
+     inkscape:cx="418.78472"
+     inkscape:cy="345.48699"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     units="px" />
+  <rect
+     width="1120.025"
+     height="630"
+     id="rect4229"
+     x="-0.025003266"
+     y="2.2737368e-013"
+     style="fill:#f7df1e" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Alter Text"
+     style="display:none">
+    <path
+       d="m 808.44832,525.40013 c 7.92747,12.94383 18.2413,22.45804 36.48259,22.45804 15.32393,0 25.11301,-7.65885 25.11301,-18.2413 0,-12.68145 -10.0577,-17.17305 -26.92465,-24.55078 l -9.24558,-3.96686 c -26.68727,-11.36957 -44.4163,-25.61277 -44.4163,-55.7234 0,-27.73676 21.13366,-48.85168 54.16164,-48.85168 23.51378,0 40.41821,8.18359 52.5999,29.61086 l -28.79876,18.49118 c -6.34072,-11.36958 -13.1812,-15.84869 -23.80114,-15.84869 -10.83233,0 -17.6978,6.87172 -17.6978,15.84869 0,11.0947 6.87172,15.58631 22.73915,22.45803 l 9.24559,3.96061 c 31.4225,13.47482 49.16403,27.21201 49.16403,58.09727 0,33.29661 -26.15627,51.5379 -61.28325,51.5379 -34.34611,0 -56.53552,-16.36719 -67.39283,-37.81945 z m -130.64389,3.20473 c 5.80972,10.30758 11.0947,19.02217 23.80114,19.02217 12.15045,0 19.81554,-4.75398 19.81554,-23.23891 l 0,-125.75248 36.98235,0 0,126.25224 c 0,38.29422 -22.45179,55.7234 -55.22364,55.7234 -29.61087,0 -46.75894,-15.32393 -55.47977,-33.78075 z"
+       id="path4231"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Text">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="569.34167"
+       y="569.1543"
+       id="text41261"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan41263"
+         x="569.34167"
+         y="569.1543"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:240px;font-family:'Yanone Kaffeesatz';-inkscape-font-specification:'Yanone Kaffeesatz Bold'">JS Jena</tspan></text>
+  </g>
+</svg>

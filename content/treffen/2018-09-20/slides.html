@@ -5,12 +5,11 @@
     <title>Willkommen bei JavaScript in Jena</title>
     <meta charset="utf-8">
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-        @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+        @import url('/assets/fonts.css');
         @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
         body {
-            font-family: 'Droid Serif';
+            font-family: 'Titillium Web';
         }
 
         h1,
@@ -26,7 +25,7 @@
 
         .remark-slide-content {
             background-color: #f7df1eff;
-            background-image: url(https://cdn.rawgit.com/javascript-in-jena/ci/develop/querformat/logo.svg);
+            background-image: url(/assets/logo-quervormat.svg);
             background-position: bottom right;
             background-size: 50%;
         }
@@ -52,21 +51,21 @@
         }
 
         .willkommen a[href^="https://github.com"] {
-            background-image: url(https://cdn.jsdelivr.net/npm/simple-icons@1.8.3/icons/github.svg);
+            background-image: url(/assets/github.svg);
         }
 
         .willkommen a[href^="https://twitter.com"] {
-            background-image: url(https://cdn.jsdelivr.net/npm/simple-icons@1.8.3/icons/twitter.svg);
+            background-image: url(/assets/twitter.svg);
         }
 
         .willkommen a[href^="https://commons.wikimedia.org/wiki/File:WIFI_icon.svg"] {
-            background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/44/WIFI_icon.svg);
+            background-image: url(/assets/wifi.svg);
             filter: brightness(0%);
         }
 
         .willkommen a[href^="https://riot.im"] {
             background-position-y: center;
-            background-image: url(https://matrix.to/img/matrix-logo.svg);
+            background-image: url(/assets/matrix-logo.svg);
         }
 
 
@@ -118,7 +117,7 @@ class: center, middle, willkommen
 
 
     </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    <script src="/assets/remark-latest.min.js">
     </script>
     <script>
         var slideshow = remark.create();
