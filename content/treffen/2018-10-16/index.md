@@ -19,4 +19,3 @@ Slides für das treffen: [Slides](/treffen/2018-10-16/slides.html)
 Salesforce bzw den B59 findest hier:
 
 <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.582601964473726%2C50.92835606598201%2C11.584154963493349%2C50.92954283377053&amp;layer=mapnik&amp;marker=50.92894945366112%2C11.583378463983536" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.92893&amp;mlon=11.58338#map=19/50.92893/11.58338">Die Karte auf openstreetmap.org ansehen.</a></small>
-
