@@ -1,9 +1,6 @@
 ---
 title: Treffen am 2018-09-20
-menu:
-    - main
 date: 2018-08-20T01:00:00+01:00
-weight: -100
 ---
 
 Unser nächstes Treffen wird am 2018-09-20 um 18:00 Uhr in Raum 04.03.11 (Haus 4, 3. OG, Raum 11) in der [EAH Jena](https://www.eah-jena.de/de-de) stattfinden.
