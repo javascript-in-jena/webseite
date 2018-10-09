@@ -10,7 +10,9 @@ Unser nächstes Treffen wird am 2018-10-16 um 18:00 Uhr bei [Salesforce](https:/
 
 Unsere Veranstaltung läuft so ab, dass es am Anfang eine kleine Vorstellungsrunde gibt. Anschließend kann jeder seine Projekte im [„Show and Tell“-Format](https://en.wikipedia.org/wiki/Show_and_tell_(education)) vorstellen. Danach können Teilnehmende Probleme erläutern und Lösungen erhalten. In der offenen Runde verläuft sich der Abend bei geselligem Zusammensein.
 
-**Wichtig**: Da Salesforce etwas striktere Sicherheitsrichtlinien hat, brauchen wir eine Liste von Namen von Menschen die kommen wollen. Du kannst uns entweder eine  E-Mail an kontakt@javascript-in-jena.de schreiben oder dich auf meetup.com anmelden und bekanntgeben ob du teilnimmst. Wir bitten euch auch schon um 17:45 da zu sein, damit wir den Bürokratie-Part zeitig erledigen können und so pünktlich um 18:00 Uhr anfangen zu können.
+**Wichtig**: Die Sicherheitsrichtlinien unseres Gastgebers sehen vor, dass sich alle Teilnehmenden anmelden. Diesen Prozess unterstützen wir, indem wir Salesforce unsere Teilnehmerliste vorab übermitteln. Deshalb bitten wir dich uns eine E-Mail an kontakt@javascript-in-jena.de zu schreiben oder dich auf meetup.com anzumelden. Falls das nicht möglich ist und du spontan dabei sein möchtest, komm bei uns vorbei und wir finden eine Lösung.
+
+Kommt bitte schon um 17:45 Uhr zur Rezeption von Salesforce in der ersten Etage zur Anmeldung, damit wir pünktlich um 18:00 Uhr anfangen können.
 
 Slides für das treffen: [Slides](/treffen/2018-10-16/slides.html)
 
