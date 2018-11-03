@@ -1,9 +1,6 @@
 ---
 title: Treffen am 2018-10-16
-menu:
-    - main
 date: 2018-10-09T18:50:00+01:00
-weight: -100
 ---
 
 Unser nächstes Treffen wird am 2018-10-16 um 18:00 Uhr bei [Salesforce](https://www.salesforce.com/) im [B59](https://de.wikipedia.org/wiki/Bau_59) stattfinden.
