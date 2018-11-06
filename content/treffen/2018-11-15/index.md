@@ -16,3 +16,6 @@ FLYACTS findest hier:
 
 <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.570979952812197%2C50.93254511964295%2C11.574882566928865%2C50.93408506833484&amp;layer=mapnik&amp;marker=50.93331510036268%2C11.57293125987053" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.93332&amp;mlon=11.57293#map=19/50.93332/11.57293">Die Karte auf openstreetmap.org ansehen.</a></small>
 
+Optional kannst du auch auf meetup.com deine Teilname bekannt geben:
+
+https://www.meetup.com/de-DE/javascript-in-jena/events/256182727/
