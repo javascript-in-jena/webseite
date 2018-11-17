@@ -9,7 +9,7 @@ lastmod: 2018-08-04T16:41:00+01:00
 
 Am besten erreichst du uns über unseren Chat auf [matrix.org](https://matrix.org):
 
-https://riot.im/app/#/room/#JSinJena:matrix.org
+https://matrix.bau-ha.us/#/room/#JSinJena:matrix.org
 
 Wenn es umbedingt eine E-Mail sein soll, bitte folgende verwenden:
 
