@@ -1,9 +1,6 @@
 ---
 title: Treffen am 2018-11-15
-menu:
-    - main
 date: 2018-11-03T20:04:00+01:00
-weight: -100
 ---
 
 Unser nächstes Treffen wird am 2018-11-15 um 18:00 Uhr bei [FLYACTS](https://www.flyatcs.com/) stattfinden.

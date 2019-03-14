@@ -6,7 +6,8 @@
   "scripts": {
     "build": "node -r ts-node/register node_modules/@datenknoten/ts-ssg/files/run --config settings.json",
     "build:sass": "node-sass template/styles/styles.scss content/assets/styles.css",
-    "watch": "chokidar --verbose \"**/*\" --command \"npm run build:sass && npm run build\" --ignore \"public/**/*\" --ignore \"content/assets/styles.css\""
+    "watch": "chokidar --verbose \"**/*\" --command \"npm run build:sass && npm run build\" --ignore \"public/**/*\" --ignore \"content/assets/styles.css\"",
+    "serve": "http-server -a 127.0.0.1 public"
   },
   "author": "JavaScript in Jena",
   "license": "MIT",
@@ -18,13 +19,15 @@
     "url": "https://github.com/javascript-in-jena/meta/issues"
   },
   "dependencies": {
-    "@datenknoten/ts-ssg": "0.5.2",
-    "ts-node": "7.0.1",
-    "typescript": "3.0.3",
-    "tslint-language-service": "0.9.9",
+    "@datenknoten/ts-ssg": "0.7.2",
     "@datenknoten/tslint-config": "0.2.0",
-    "chokidar-cli": "1.2.1",
-    "moment": "2.22.2",
-    "node-sass": "4.9.3"
+    "chokidar-cli": "1.2.2",
+    "http-server": "0.11.1",
+    "moment": "2.24.0",
+    "netlify-cli": "2.8.1",
+    "node-sass": "4.11.0",
+    "ts-node": "8.0.2",
+    "tslint-language-service": "0.9.9",
+    "typescript": "3.3.3333"
   }
 }
