@@ -7,7 +7,7 @@ Unser nächstes Treffen wird am 2018-11-15 um 18:00 Uhr bei [FLYACTS](https://ww
 
 Unsere Veranstaltung läuft so ab, dass es am Anfang eine kleine Vorstellungsrunde gibt. Anschließend kann jeder seine Projekte im [„Show and Tell“-Format](https://en.wikipedia.org/wiki/Show_and_tell_(education)) vorstellen. Danach können Teilnehmende Probleme erläutern und Lösungen erhalten. In der offenen Runde verläuft sich der Abend bei geselligem Zusammensein.
 
-Slides für das treffen: <a href="/treffen/2018-11-15/slides.html" data-turbolinks="false">Slides</a>
+Slides für das Treffen: <a href="/treffen/2018-11-15/slides.html" data-turbolinks="false">Slides</a>
 
 FLYACTS findest hier:
 
