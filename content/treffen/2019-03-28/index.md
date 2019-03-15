@@ -26,4 +26,4 @@ mitteilen, auf welche Etage du gehen musst.
 
 Optional kannst du deine Teilnahme auch auf meetup.com bekanntgeben:
 
-<strong>ToDo: Meetup-Termin erstellen</strong>
+[www.meetup.com/de-DE/javascript-in-jena/events/259793666/](https://www.meetup.com/de-DE/javascript-in-jena/events/259793666/)
