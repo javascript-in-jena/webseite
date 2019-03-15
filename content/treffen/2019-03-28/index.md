@@ -16,7 +16,7 @@ In der offenen Runde verläuft sich der Abend bei geselligem Zusammensein.
 
 Slides für das Treffen: <a href="/treffen/2019-03-28/slides.html">Slides</a>
 
-Intershop findest du im Intershop-Tower:
+Intershop findest du im JenTower:
 
 <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.582086980342865%2C50.92820560465519%2C11.585895717144014%2C50.9296662423581&amp;layer=mapnik&amp;marker=50.92893592923991%2C11.583991348743439" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.92894&amp;mlon=11.58399#map=19/50.92894/11.58399">Die Karte auf openstreetmap.org ansehen.</a></small>
 
