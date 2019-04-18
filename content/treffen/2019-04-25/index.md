@@ -6,7 +6,7 @@ date: 2019-04-18T22:27:00+01:00
 weight: -100
 ---
 
-Unser nächstes Treffen wird am 2019-04-24 um 18:00 Uhr in den Räumen von [Flyacts](https://www.flyacts.com/) stattfinden.
+Unser nächstes Treffen wird am 2019-04-24 um 18:00 Uhr in den Räumen von [FLYACTS](https://www.flyacts.com/) stattfinden.
 
 Unsere Veranstaltung läuft so ab, dass es am Anfang eine kleine
 Vorstellungsrunde gibt. Anschließend kann jeder seine Projekte im [„Show and
