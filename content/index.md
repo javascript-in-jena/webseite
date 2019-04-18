@@ -10,4 +10,4 @@ Unsere Veranstaltungen laufen in der Regel so ab, dass es am Anfang eine kleine 
 
 Unser nächstes Treffen wird am 2019-03-28 um 18:00 Uhr bei [Intershop](https://www.intershop.de/) stattfinden.
 
-Der Link der Veranstaltung lautet: [https://jena.js.org/treffen/2019-03-28](/treffen/2019-03-28)
+Der Link der Veranstaltung lautet: [https://jena.js.org/treffen/2019-04-25](/treffen/2019-04-25)

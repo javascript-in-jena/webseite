@@ -1,9 +1,6 @@
 ---
 title: Treffen am 2019-03-28
-menu:
-    - main
 date: 2018-11-03T20:04:00+01:00
-weight: -100
 ---
 
 Unser nächstes Treffen wird am 2019-03-28 um 18:00 Uhr in den Räumen von [Intershop](https://www.intershop.com/) stattfinden.
