@@ -23,3 +23,4 @@ FLYACTS findest hier:
 Optional kannst du deine Teilnahme auch auf meetup.com bekanntgeben:
 
 
+https://www.meetup.com/de-DE/javascript-in-jena/events/260740642/
