@@ -14,7 +14,7 @@ Tell“-Format](https://en.wikipedia.org/wiki/Show_and_tell_(education))
 vorstellen. Danach können Teilnehmende Probleme erläutern und Lösungen erhalten.
 In der offenen Runde verläuft sich der Abend bei geselligem Zusammensein.
 
-Slides für das Treffen: <a href="/treffen/2019-03-28/slides.html">Slides</a>
+Slides für das Treffen: <a href="/treffen/2019-04-25/slides.html">Slides</a>
 
 FLYACTS findest hier:
 
